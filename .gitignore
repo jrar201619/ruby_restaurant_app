@@ -1,0 +1,43 @@
+# Ignore Mac and Linux file system stuff
+.env
+.DS_Store
+.vscode/
+
+# Rails
+/bin/*
+!/bin/setup
+!/bin/rails
+!/bin/rake
+/config/database.yml
+/config/master.key
+/config/credentials.yml.enc
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/seeds.rb
+/log/*.log
+/tmp
+/public/assets
+/public/packs
+/public/uploads
+/storage/*
+
+# Bundler
+.bundle/
+/vendor/bundle
+
+# RVM/rbenv
+.ruby-version
+.zeus.sock
+
+# Passenger
+.passenger_temp/
+
+# RSpec / Tests
+/.rspec
+/spec/tmp
+
+# RubyMine
+.idea/
+
+# Other
+.byebug_history
