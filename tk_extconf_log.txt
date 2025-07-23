@@ -1,0 +1,23 @@
+Configure options for Ruby/Tk may be updated.
+So, delete files which depend on old configs.
+check functions.checking for ruby_native_thread_p() in ruby.h... yes
+checking for rb_errinfo() in ruby.h... yes
+checking for rb_hash_lookup() in ruby.h... yes
+checking for rb_proc_new() in ruby.h... yes
+checking for rb_sourcefile() in ruby.h... yes
+checking for rb_thread_alive_p() in ruby.h... no
+checking for rb_thread_check_trap_pending() in ruby.h... yes
+checking for ruby_enc_find_basename() in ruby.h... yes
+check libraries.checking for t_open() in -lnsl... no
+checking for socket() in -lsocket... no
+checking for dlopen() in -ldl... yes
+checking for log() in -lm... yes
+Use ActiveTcl libraries (if available).
+Search tclConfig.sh (in /usr/local/lib) and tkConfig.sh (in /usr/local/lib).
+Valid [tclConfig.sh, tkConfig.sh] are found in [["/usr/local/lib", "/usr/local/lib"]]
+Use [tclConfig.sh, tkConfig.sh] == ["/usr/local/lib/tclConfig.sh", "/usr/local/lib/tkConfig.sh"]
+Use X11 libraries (or use TK_XINCLUDES/TK_XLIBSW information on tkConfig.sh).
+checking for XOpenDisplay() in -lX11... yes
+creating Makefile
+
+Find Tcl/Tk libraries. Make tcltklib.so which is required by Ruby/Tk.
